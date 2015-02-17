@@ -3,6 +3,7 @@ var express = require("express"),
     mongoose = require("mongoose"),
     path = require('path'),
     bodyParser = require('body-parser'),
+    passport = require('passport'),
     io = require('socket.io')(http);
 
 var port = process.env.PORT || 8080;                //we use port 3000
@@ -58,6 +59,7 @@ app.post('/', function (req, res) {
         //socket.emit('customText', {'text' : "test text"});
         //console.log("SOCKET SUCCESS!");
         //socket.emit('customText', {'text' : "test text"});
+        console.log("Ting Connected!");
         console.log("SOCKET CONNECTED!");
         sock = socket;
 

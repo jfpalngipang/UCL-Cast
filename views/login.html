@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>BBCast Login</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/foundation/foundation.css">
+    <link rel="stylesheet" type="text/css" href="foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+
+</head>
+<body>
+    <row>
+        <div class="large-12 columns">
+            <header class="header">
+                <h1>Login to start casting.</h1>
+                <a href="#" class="button radius" data-reveal-id="FacebookLoginModal"><i class="fi-social-facebook"></i>Facebook</a>
+                <a href="##" class="button radius alert" data-reveal-id="GoogleLoginModal"><i class="fi-social-google-plus"></i>Google</a>
+                <a href="###" class="button radius info" data-reveal-id="TwitterLoginModal"><i class="fi-social-twitter"></i>Twitter</a>
+            </header>
+        </div>
+    </row>
+    <row>
+        <div class="large-6 columns">
+            <h4>Cast your announcements on large display.</h4>
+        </div>
+    </row>
+    <!-- Login Modal -->
+    <!-- FB Login Modal -->
+    <div id="FacebookLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
+        <h4><i class="fi-social-facebook" style="font-size:48px; color:darkblue;"></i>Facebook Login</h4>
+        <form>
+            <label>Email/Username</label>
+            <input type="text" id="email_textbox" placeholder="user@domain.com">
+            <label>Password</label>
+            <input type="text" id="password_textbox" placeholder="********">
+            <button>Cancel</button>
+            <button>Login</button>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- Google Login Modal -->
+    <div id="GoogleLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
+        <h4><i class="fi-social-google-plus" style="font-size:48px; color:red;"></i>Google Login</h4>
+        <label>Email</label>
+        <input type="text" id="email_textbox" placeholder="user@domain.com">
+        <label>Password</label>
+        <input type="text" id="password_textbox" placeholder="********">
+        <button class="alert">Cancel</button>
+        <button class="alert">Login</button>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- Twitter Login Modal -->
+    <div id="TwitterLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
+        <h4><i class="fi-social-twitter" style="font-size:48px; color:dodgerblue"></i>Twitter Login</h4>
+        <label>Email/Username</label>
+        <input type="text" id="email_textbox" placeholder="user@domain.com">
+        <label>Password</label>
+        <input type="text" id="password_textbox" placeholder="********">
+        <button class="info">Cancel</button>
+        <button class="info">Login</button>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+
+    <!-- end of modal -->
+
+    <script type="text/javascript" src="../assets/js/vendor/jquery.js"></script>
+
+    <script type="text/javascript" src="../assets/js/foundation/foundation.js"></script>
+    <script src="../assets/js/foundation/foundation.reveal.js"></script>
+
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
+
+</body>
+</html>

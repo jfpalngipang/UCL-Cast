@@ -1,0 +1,271 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json BBCast@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/jfpalngipang/codespace/JS/ucl-cast',
+6 verbose install   [ 'express',
+6 verbose install     'express-handlebars',
+6 verbose install     'node-jsx',
+6 verbose install     'mongoose',
+6 verbose install     'react',
+6 verbose install     'socket.io',
+6 verbose install     'ntwitter',
+6 verbose install     'passport',
+6 verbose install     'passport-facebook',
+6 verbose install     'passport-twitter',
+6 verbose install     'passport-google-oauth',
+6 verbose install     'browserify',
+6 verbose install     'reactify',
+6 verbose install     'watchify',
+6 verbose install     'body-parser' ] ]
+7 info preinstall BBCast@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping ntwitter@^0.5.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+10 verbose cache add [ 'passport@~0.1.17', null ]
+11 verbose cache add name=undefined spec="passport@~0.1.17" args=["passport@~0.1.17",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'passport@~0.1.17',
+12 verbose parsed url   path: 'passport@~0.1.17',
+12 verbose parsed url   href: 'passport@~0.1.17' }
+13 verbose cache add [ 'passport-facebook@~1.0.2', null ]
+14 verbose cache add name=undefined spec="passport-facebook@~1.0.2" args=["passport-facebook@~1.0.2",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'passport-facebook@~1.0.2',
+15 verbose parsed url   path: 'passport-facebook@~1.0.2',
+15 verbose parsed url   href: 'passport-facebook@~1.0.2' }
+16 verbose cache add [ 'passport-twitter@~1.0.2', null ]
+17 verbose cache add name=undefined spec="passport-twitter@~1.0.2" args=["passport-twitter@~1.0.2",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'passport-twitter@~1.0.2',
+18 verbose parsed url   path: 'passport-twitter@~1.0.2',
+18 verbose parsed url   href: 'passport-twitter@~1.0.2' }
+19 verbose cache add name="passport" spec="~0.1.17" args=["passport","~0.1.17"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '~0.1.17',
+20 verbose parsed url   path: '~0.1.17',
+20 verbose parsed url   href: '~0.1.17' }
+21 verbose addNamed [ 'passport', '~0.1.17' ]
+22 verbose addNamed [ null, '>=0.1.17-0 <0.2.0-0' ]
+23 verbose cache add name="passport-facebook" spec="~1.0.2" args=["passport-facebook","~1.0.2"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '~1.0.2',
+24 verbose parsed url   path: '~1.0.2',
+24 verbose parsed url   href: '~1.0.2' }
+25 verbose addNamed [ 'passport-facebook', '~1.0.2' ]
+26 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+27 verbose cache add [ 'passport-google-oauth@~1.0.5', null ]
+28 verbose cache add name=undefined spec="passport-google-oauth@~1.0.5" args=["passport-google-oauth@~1.0.5",null]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: 'passport-google-oauth@~1.0.5',
+29 verbose parsed url   path: 'passport-google-oauth@~1.0.5',
+29 verbose parsed url   href: 'passport-google-oauth@~1.0.5' }
+30 verbose already installed skipping browserify@~6.0.3 /Users/jfpalngipang/codespace/JS/ucl-cast
+31 verbose already installed skipping reactify@~0.14.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+32 verbose cache add name="passport-twitter" spec="~1.0.2" args=["passport-twitter","~1.0.2"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '~1.0.2',
+33 verbose parsed url   path: '~1.0.2',
+33 verbose parsed url   href: '~1.0.2' }
+34 verbose addNamed [ 'passport-twitter', '~1.0.2' ]
+35 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+36 silly lockFile ea5895ee-passport-0-1-17 passport@~0.1.17
+37 verbose lock passport@~0.1.17 /Users/jfpalngipang/.npm/ea5895ee-passport-0-1-17.lock
+38 silly lockFile 15dce32a-passport-facebook-1-0-2 passport-facebook@~1.0.2
+39 verbose lock passport-facebook@~1.0.2 /Users/jfpalngipang/.npm/15dce32a-passport-facebook-1-0-2.lock
+40 silly lockFile d97c8ec0-passport-twitter-1-0-2 passport-twitter@~1.0.2
+41 verbose lock passport-twitter@~1.0.2 /Users/jfpalngipang/.npm/d97c8ec0-passport-twitter-1-0-2.lock
+42 verbose cache add name="passport-google-oauth" spec="~1.0.5" args=["passport-google-oauth","~1.0.5"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '~1.0.5',
+43 verbose parsed url   path: '~1.0.5',
+43 verbose parsed url   href: '~1.0.5' }
+44 verbose addNamed [ 'passport-google-oauth', '~1.0.5' ]
+45 verbose addNamed [ null, '>=1.0.5-0 <1.1.0-0' ]
+46 silly lockFile 74c8ecea-passport-google-oauth-1-0-5 passport-google-oauth@~1.0.5
+47 verbose lock passport-google-oauth@~1.0.5 /Users/jfpalngipang/.npm/74c8ecea-passport-google-oauth-1-0-5.lock
+48 verbose already installed skipping watchify@~2.0.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+49 verbose already installed skipping body-parser@^1.8.1 /Users/jfpalngipang/codespace/JS/ucl-cast
+50 silly addNameRange { name: 'passport',
+50 silly addNameRange   range: '>=0.1.17-0 <0.2.0-0',
+50 silly addNameRange   hasData: false }
+51 silly addNameRange { name: 'passport-facebook',
+51 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+51 silly addNameRange   hasData: false }
+52 silly addNameRange { name: 'passport-twitter',
+52 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+52 silly addNameRange   hasData: false }
+53 silly addNameRange { name: 'passport-google-oauth',
+53 silly addNameRange   range: '>=1.0.5-0 <1.1.0-0',
+53 silly addNameRange   hasData: false }
+54 verbose registry.get https://registry.npmjs.org/passport not expired, no request
+55 silly addNameRange number 2 { name: 'passport', range: '>=0.1.17-0 <0.2.0-0', hasData: true }
+56 silly addNameRange versions [ 'passport',
+56 silly addNameRange   [ '0.1.0',
+56 silly addNameRange     '0.1.1',
+56 silly addNameRange     '0.1.2',
+56 silly addNameRange     '0.1.3',
+56 silly addNameRange     '0.1.4',
+56 silly addNameRange     '0.1.5',
+56 silly addNameRange     '0.1.6',
+56 silly addNameRange     '0.1.7',
+56 silly addNameRange     '0.1.8',
+56 silly addNameRange     '0.1.9',
+56 silly addNameRange     '0.1.10',
+56 silly addNameRange     '0.1.11',
+56 silly addNameRange     '0.1.12',
+56 silly addNameRange     '0.1.13',
+56 silly addNameRange     '0.1.14',
+56 silly addNameRange     '0.1.15',
+56 silly addNameRange     '0.1.16',
+56 silly addNameRange     '0.1.17',
+56 silly addNameRange     '0.1.18',
+56 silly addNameRange     '0.2.0',
+56 silly addNameRange     '0.2.1' ] ]
+57 verbose addNamed [ 'passport', '0.1.18' ]
+58 verbose addNamed [ '0.1.18', '0.1.18' ]
+59 silly lockFile 8599b435-passport-0-1-18 passport@0.1.18
+60 verbose lock passport@0.1.18 /Users/jfpalngipang/.npm/8599b435-passport-0-1-18.lock
+61 verbose registry.get https://registry.npmjs.org/passport-facebook not expired, no request
+62 silly addNameRange number 2 { name: 'passport-facebook',
+62 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+62 silly addNameRange   hasData: true }
+63 silly addNameRange versions [ 'passport-facebook',
+63 silly addNameRange   [ '0.1.0',
+63 silly addNameRange     '0.1.1',
+63 silly addNameRange     '0.1.2',
+63 silly addNameRange     '0.1.3',
+63 silly addNameRange     '0.1.4',
+63 silly addNameRange     '0.1.5',
+63 silly addNameRange     '0.1.6',
+63 silly addNameRange     '1.0.0',
+63 silly addNameRange     '1.0.1',
+63 silly addNameRange     '1.0.2',
+63 silly addNameRange     '1.0.3' ] ]
+64 verbose addNamed [ 'passport-facebook', '1.0.3' ]
+65 verbose addNamed [ '1.0.3', '1.0.3' ]
+66 silly lockFile 3e2a96bb-passport-facebook-1-0-3 passport-facebook@1.0.3
+67 verbose lock passport-facebook@1.0.3 /Users/jfpalngipang/.npm/3e2a96bb-passport-facebook-1-0-3.lock
+68 verbose already installed skipping express@~4.9.7 /Users/jfpalngipang/codespace/JS/ucl-cast
+69 verbose already installed skipping express-handlebars@~1.1.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+70 verbose already installed skipping node-jsx@~0.11.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+71 verbose already installed skipping mongoose@^3.8.17 /Users/jfpalngipang/codespace/JS/ucl-cast
+72 verbose already installed skipping react@~0.11.2 /Users/jfpalngipang/codespace/JS/ucl-cast
+73 verbose already installed skipping socket.io@^1.1.0 /Users/jfpalngipang/codespace/JS/ucl-cast
+74 verbose registry.get https://registry.npmjs.org/passport-twitter not expired, no request
+75 silly addNameRange number 2 { name: 'passport-twitter',
+75 silly addNameRange   range: '>=1.0.2-0 <1.1.0-0',
+75 silly addNameRange   hasData: true }
+76 silly addNameRange versions [ 'passport-twitter',
+76 silly addNameRange   [ '0.1.0',
+76 silly addNameRange     '0.1.1',
+76 silly addNameRange     '0.1.2',
+76 silly addNameRange     '0.1.3',
+76 silly addNameRange     '0.1.4',
+76 silly addNameRange     '0.1.5',
+76 silly addNameRange     '1.0.0',
+76 silly addNameRange     '1.0.1',
+76 silly addNameRange     '1.0.2' ] ]
+77 verbose addNamed [ 'passport-twitter', '1.0.2' ]
+78 verbose addNamed [ '1.0.2', '1.0.2' ]
+79 silly lockFile 50fcdf9c-passport-twitter-1-0-2 passport-twitter@1.0.2
+80 verbose lock passport-twitter@1.0.2 /Users/jfpalngipang/.npm/50fcdf9c-passport-twitter-1-0-2.lock
+81 verbose registry.get https://registry.npmjs.org/passport-google-oauth not expired, no request
+82 silly addNameRange number 2 { name: 'passport-google-oauth',
+82 silly addNameRange   range: '>=1.0.5-0 <1.1.0-0',
+82 silly addNameRange   hasData: true }
+83 silly addNameRange versions [ 'passport-google-oauth',
+83 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5' ] ]
+84 silly lockFile 74c8ecea-passport-google-oauth-1-0-5 passport-google-oauth@~1.0.5
+85 silly lockFile 74c8ecea-passport-google-oauth-1-0-5 passport-google-oauth@~1.0.5
+86 silly lockFile 8599b435-passport-0-1-18 passport@0.1.18
+87 silly lockFile 8599b435-passport-0-1-18 passport@0.1.18
+88 silly lockFile 3e2a96bb-passport-facebook-1-0-3 passport-facebook@1.0.3
+89 silly lockFile 3e2a96bb-passport-facebook-1-0-3 passport-facebook@1.0.3
+90 silly lockFile 50fcdf9c-passport-twitter-1-0-2 passport-twitter@1.0.2
+91 silly lockFile 50fcdf9c-passport-twitter-1-0-2 passport-twitter@1.0.2
+92 silly lockFile ea5895ee-passport-0-1-17 passport@~0.1.17
+93 silly lockFile ea5895ee-passport-0-1-17 passport@~0.1.17
+94 silly lockFile 15dce32a-passport-facebook-1-0-2 passport-facebook@~1.0.2
+95 silly lockFile 15dce32a-passport-facebook-1-0-2 passport-facebook@~1.0.2
+96 silly lockFile d97c8ec0-passport-twitter-1-0-2 passport-twitter@~1.0.2
+97 silly lockFile d97c8ec0-passport-twitter-1-0-2 passport-twitter@~1.0.2
+98 error notarget No compatible version found: passport-google-oauth@'>=1.0.5-0 <1.1.0-0'
+98 error notarget Valid install targets:
+98 error notarget ["0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5"]
+98 error notarget
+98 error notarget This is most likely not a problem with npm itself.
+98 error notarget In most cases you or one of your dependencies are requesting
+98 error notarget a package version that doesn't exist.
+99 error System Darwin 14.0.0
+100 error command "node" "/usr/local/bin/npm" "install"
+101 error cwd /Users/jfpalngipang/codespace/JS/ucl-cast
+102 error node -v v0.10.36
+103 error npm -v 1.4.28
+104 error code ETARGET
+105 verbose exit [ 1, true ]
