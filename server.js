@@ -6,6 +6,8 @@ var express = require("express"),
     passport = require('passport'),
     io = require('socket.io')(http);
 
+var routes = require('./app/routes');
+
 var port = process.env.PORT || 8080;                //we use port 3000
 mongoose.connect('mongodb://localhost/testdb')      //connect to our local db
 
@@ -14,7 +16,7 @@ mongoose.connect('mongodb://localhost/testdb')      //connect to our local db
 var app = express();
 
 emitter();
-app.set('htdocs', (path.join(__dirname, 'htdocs')));
+app.set('views', (path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -43,18 +45,18 @@ app.get('/', function(req,res) {
         res.send(doc.name);
     })
 */
-    res.sendFile('index.html',{ root: path.join(__dirname, 'htdocs') });
+    res.sendFile('index.html',{ root: path.join(__dirname, 'views') });
     console.log("GET test passed");
 
 
 });
 
 app.get('/config', function(req,res) {
-    res.sendFile('config.html',{ root: path.join(__dirname, 'htdocs') });
+    res.sendFile('config.html',{ root: path.join(__dirname, 'views') });
 });
 
 app.post('/', function (req, res) {
-    //res.sendFile('config.html',{ root: path.join(__dirname, 'htdocs') });
+    //res.sendFile('config.html',{ root: path.join(__dirname, 'views') });
     io.sockets.on('connection', function (socket) {
         //socket.emit('customText', {'text' : "test text"});
         //console.log("SOCKET SUCCESS!");
