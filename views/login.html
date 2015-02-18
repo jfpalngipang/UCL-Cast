@@ -27,37 +27,55 @@
     <!-- Login Modal -->
     <!-- FB Login Modal -->
     <div id="FacebookLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
-        <h4><i class="fi-social-facebook" style="font-size:48px; color:darkblue;"></i>Facebook Login</h4>
-        <form>
-            <label>Email/Username</label>
-            <input type="text" id="email_textbox" placeholder="user@domain.com">
-            <label>Password</label>
-            <input type="text" id="password_textbox" placeholder="********">
-            <button>Cancel</button>
-            <button>Login</button>
+
+        <form action="/login" method="post">
+            <fieldset>
+                <legend><h4><i class="fi-social-facebook" style="font-size:48px; color:darkblue;"></i>Facebook Login</h4></legend>
+                <label>Email/Username
+                    <input type="text" id="email_textbox" placeholder="user@domain.com">
+                </label>
+                <label>Password
+                    <input type="text" id="password_textbox" placeholder="********">
+                </label>
+                <button>Cancel</button>
+                <button>Login</button>
+            </fieldset>
         </form>
         <a class="close-reveal-modal">&#215;</a>
     </div>
     <!-- Google Login Modal -->
     <div id="GoogleLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
-        <h4><i class="fi-social-google-plus" style="font-size:48px; color:red;"></i>Google Login</h4>
-        <label>Email</label>
-        <input type="text" id="email_textbox" placeholder="user@domain.com">
-        <label>Password</label>
-        <input type="text" id="password_textbox" placeholder="********">
-        <button class="alert">Cancel</button>
-        <button class="alert">Login</button>
+        <form>
+            <fieldset>
+                <legend><h4><i class="fi-social-google-plus" style="font-size:48px; color:red;"></i>Google Login</h4></legend>
+                <label>Email
+                    <input type="text" id="email_textbox" placeholder="user@domain.com">
+                </label>
+                <label>Password
+                    <input type="text" id="password_textbox" placeholder="********">
+                </label>
+                <button class="alert">Cancel</button>
+                <button class="alert">Login</button>
+            </fieldset>
+        </form>
         <a class="close-reveal-modal">&#215;</a>
+
     </div>
     <!-- Twitter Login Modal -->
     <div id="TwitterLoginModal" style="width:500px;" class="reveal-modal" data-reveal>
-        <h4><i class="fi-social-twitter" style="font-size:48px; color:dodgerblue"></i>Twitter Login</h4>
-        <label>Email/Username</label>
-        <input type="text" id="email_textbox" placeholder="user@domain.com">
-        <label>Password</label>
-        <input type="text" id="password_textbox" placeholder="********">
-        <button class="info">Cancel</button>
-        <button class="info">Login</button>
+        <form>
+            <fieldset>
+                <legend><h4><i class="fi-social-twitter" style="font-size:48px; color:dodgerblue"></i>Twitter Login</h4></legend>
+                <label>Email/Username
+                    <input type="text" id="email_textbox" placeholder="user@domain.com">
+                </label>
+                <label>Password
+                    <input type="text" id="password_textbox" placeholder="********">
+                </label>
+                <button class="info">Cancel</button>
+                <button class="info">Login</button>
+            </fieldset>
+        </form>
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
@@ -65,10 +83,8 @@
     <!-- end of modal -->
 
     <script type="text/javascript" src="../assets/js/vendor/jquery.js"></script>
-
     <script type="text/javascript" src="../assets/js/foundation/foundation.js"></script>
     <script src="../assets/js/foundation/foundation.reveal.js"></script>
-
     <script type="text/javascript">
         $(document).foundation();
     </script>
