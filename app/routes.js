@@ -2,21 +2,20 @@
  * Created by jfpalngipang on 2/16/15.
  */
 module.exports = function(app, passport) {
+
     app.get('/', function (req, res) {
-        res.render('index.html');
+        res.render('index.ejs');
     });
 
     app.get('/login', function (req, res) {
-        res.sendFile('login.html', {root: path.join(__dirname, 'views')});
+        res.render('login.ejs');
     });
 
     app.get('/display', function (req, res) {
-        res.sendFile('display.html', {root: path.join(__dirname, 'views')});
+        res.render('display.ejs');
     });
 
-    app.get('/config', function (req, res) {
-        res.sendFile('config.html', {root: path.join(__dirname, 'views')});
-    });
+
 
     app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email'}));
 

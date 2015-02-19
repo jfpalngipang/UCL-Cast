@@ -21,7 +21,7 @@ var app = express();
 
 
 emitter();
-app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.use(session({ secret: 'BBCastUCLfranzPalngipang'}));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//var routes = require('./app/routes')(app, passport);
+var routes = require('./app/routes')(app, passport);
 
 var server = http.createServer(app).listen(port, function() {
     console.log('Listening on port ' + port);
@@ -49,25 +49,7 @@ var server = http.createServer(app).listen(port, function() {
 io.listen(server);
 
 
-
-app.get('/', function(req,res) {
-/*
-    Comment.findOne(function (err, doc) {
-        res.send(doc.name);
-    })
-*/
-    res.sendFile('index.html',{ root: path.join(__dirname, 'views') });
-    console.log("GET test passed");
-
-
-});
-
-app.get('/config', function(req,res) {
-    res.sendFile('config.html',{ root: path.join(__dirname, 'views') });
-});
-
 app.post('/', function (req, res) {
-    //res.sendFile('config.html',{ root: path.join(__dirname, 'views') });
     io.sockets.on('connection', function (socket) {
         //socket.emit('customText', {'text' : "test text"});
         //console.log("SOCKET SUCCESS!");
@@ -76,7 +58,7 @@ app.post('/', function (req, res) {
         console.log("SOCKET CONNECTED!");
         sock = socket;
 
-        sock.emit('customText', {'text' : req.body.custom_text});
+        sock.emit('customText', {'text' : req.body});
         //console.log(sock);
     });
     console.log(req.body);
