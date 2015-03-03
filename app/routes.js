@@ -5,6 +5,15 @@ module.exports = function(app, passport, io) {
 
     app.get('/', function (req, res) {
         res.render('index.ejs');
+
+        if(req.body.action === "getVideoQueue") {
+
+        } if (req.body.action === "getImageQueue") {
+
+        } if(req.body.action === "getTextQueue") {
+
+        }
+
     });
 
     app.get('/login', function (req, res) {
@@ -16,19 +25,20 @@ module.exports = function(app, passport, io) {
     });
 
     app.post('/', function (req, res) {
-        //io.sockets.on('connection', function (socket) {
-        //socket.emit('customText', {'text' : "test text"});
-        //console.log("SOCKET SUCCESS!");
-        //socket.emit('customText', {'text' : "test text"});
-        //console.log("Ting Connected!");
-        //console.log("SOCKET CONNECTED!");
 
         if(req.body.action === "castImage") {
-            io.sockets.emit('castImage', {});
-        }
-        io.sockets.emit('customText', {'text' : req.body.custom_text});
-        //res.end('received!');
+            io.sockets.emit('castImage', {'imageURL':req.body.imageURL});
+        } if (req.body.action === "castText") {
+            io.sockets.emit('castText', {'customText': req.body.customText});
+        } if (req.body.action === "castVideo") {
+            io.sockets.emit('castVideo', {'videoID': req.body.videoID});
+        } if (req.body.action === "addImage") {
 
+        } if (req.body.action === "addText") {
+
+        } if (req.body.action === "addVideo") {
+
+        }
         console.log(req.body);
     });
 

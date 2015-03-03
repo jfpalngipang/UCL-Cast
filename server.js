@@ -45,7 +45,7 @@ var server = http.createServer(app).listen(port, function() {
 });
 io.listen(server);
 
-var routes = require('./app/routes')(app, passport, io);
+require('./app/routes')(app, passport, io);
 io.sockets.on('connection', function (socket) {
     console.log("a socket connected");
 });

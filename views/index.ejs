@@ -66,33 +66,35 @@
         <!-- modals -->
         <div id="videoModal" class="reveal-modal" data-reveal>
             <h2>Add Video</h2>
-            <p>Paste the URL of the video you want to cast:</p>
-            <input type="text" id="video_textbox" placeholder="Inline Text Input">
-            <p>When is the deadline for this? :</p>
-            <input type="text" id="video_deadline" placeholder="Inline Text Input">
-            <button onclick="videoAdd()">Add to Queue</button>
-            <button onclick="videoPlay()">Play Now</button>
+            <form action="/" method="post" content-type="application/json">
+                <p>Paste the URL of the video you want to cast:</p>
+                <input type="text" name="videoID" id="video_textbox" placeholder="Inline Text Input">
+                <p>When is the deadline for this? :</p>
+                <input type="text" name="videoDeadline" id="video_deadline" placeholder="Inline Text Input">
+                <button name="action" value="castVideo">Cast</button>
+            </form>
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="imageModal" class="reveal-modal" data-reveal>
             <h2>Add Image</h2>
-            <p>Paste the URL of the image you want to cast:</p>
-            <input type="text" id="image_textbox" placeholder="Inline Text Input">
-            <p>When is the deadline for this? :</p>
-            <input type="text" id="image_deadline" placeholder="Inline Text Input">
-            <button>Add to Queue</button>
-            <button>Cast Now</button>
-            <a class="close-reveal-modal">&#215;</a>
+            <form action="/" method="post" content-type="application/json">
+                <p>Paste the URL of the image you want to cast:</p>
+                <input type="text" name="imageURL" id="image_textbox" placeholder="Inline Text Input">
+                <p>When is the deadline for this? :</p>
+                <input type="text" name="imageDeadline" id="image_deadline" placeholder="Inline Text Input">
+                <button name="action" value="castImage">Cast</button>
+                <a class="close-reveal-modal">&#215;</a>
+            </form>
+
         </div>
         <div id="textModal" class="reveal-modal" data-reveal>
             <h2>Add Text</h2>
             <form action="/" method="post" content-type="application/json">
                 <p>Type the text you want to cast:</p>
-                <input type="text" name="custom_text" id="text_textbox" placeholder="Inline Text Input">
+                <input type="text" name="customText" id="text_textbox" placeholder="Inline Text Input">
                 <p>When is the deadline for this? :</p>
                 <input type="text" name="custom_deadline" id="text_deadline" placeholder="Inline Text Input">
-                <button>Add to Queue</button>
-                <button>Cast Now</button>
+                <button name="action" value="castText">Cast</button>
             </form>
             <a class="close-reveal-modal">&#215;</a>
         </div>
