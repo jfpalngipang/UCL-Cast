@@ -12,6 +12,14 @@ module.exports = function(app, passport, io) {
 
         } if(req.body.action === "getTextQueue") {
 
+        } if(req.body.action === "getCurrentVideo") {
+
+        } if (req.body.action === "getCurrentImage") {
+
+        } if (req.body.action === "getCurrentText") {
+
+        } if (req.body.action === "getCurrentLayout") {
+
         }
 
     });
