@@ -30,11 +30,8 @@
 
         <div class="large-6 columns" id="img_div" style="background-color:#c3c3c3; height:400px;">
             <div class="slider image_carousel">
-                <div><h1>hello!</h1></div>
-                <!--<div><img src="https://dl.dropboxusercontent.com/s/zlp59ukuqdpobzw/Photo%2027.jpeg"></div>-->
-                <div><h1>hola</h1></div>
-                <!--<div><img src="https://dl.dropboxusercontent.com/u/56201092/inspirational-quote-hd-wallpaper-1920x1080-9128.jpg"></div>-->
-
+                <div><img src="https://dl.dropboxusercontent.com/s/zlp59ukuqdpobzw/Photo%2027.jpeg"></div>
+                <div><img src="https://dl.dropboxusercontent.com/u/56201092/inspirational-quote-hd-wallpaper-1920x1080-9128.jpg"></div>
             </div>
 
 
@@ -137,12 +134,14 @@
     var socket = io.connect('http://localhost:8080/');
     socket.on('castText', function(e){
         console.log(e.customText);
-        $('.image_carousel').slick('slickAdd',"<div><h1>UCL</h1></div>");
+        $('.text_carousel').slick('slickAdd',"<div><h1 id='newText'></h1></div>");
+        $('#newText').text(e.customText);
         //document.getElementById('custom').innerHTML = e.customText;
     });
     socket.on('castImage', function(e){
         console.log(e.imageURL);
-        $('.image_carousel').slick('slickAdd',"<div><h1>NEW_IMAGE</h1></div>");
+        $('.image_carousel').slick('slickAdd',"<div><img id='newImage' src=''></div>");
+        $('#newImage').attr('src',e.imageURL);
        // document.getElementById('custom').innerHTML = e.url;
     });
     socket.on('castVideo', function(e){

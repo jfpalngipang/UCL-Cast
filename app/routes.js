@@ -1,24 +1,31 @@
 /**
  * Created by jfpalngipang on 2/16/15.
  */
-module.exports = function(app, passport, io) {
+var Video = require("./models/video");
+module.exports = function(app, passport, io, mongoose) {
+
 
     app.get('/', function (req, res) {
         res.render('index.ejs');
 
-        if(req.body.action === "getVideoQueue") {
+       if(req.query.action === "getVideoQueue") {
+            Video.find({}, function(err, videos){
+                if(err) throw err;
+                res.send(videos);
+            });
+        }
 
-        } if (req.body.action === "getImageQueue") {
+        if (req.query.action === "getImageQueue") {
 
-        } if(req.body.action === "getTextQueue") {
+        } if(req.query.action === "getTextQueue") {
 
-        } if(req.body.action === "getCurrentVideo") {
+        } if(req.query.action === "getCurrentVideo") {
 
-        } if (req.body.action === "getCurrentImage") {
+        } if (req.query.action === "getCurrentImage") {
 
-        } if (req.body.action === "getCurrentText") {
+        } if (req.query.action === "getCurrentText") {
 
-        } if (req.body.action === "getCurrentLayout") {
+        } if (req.query.action === "getCurrentLayout") {
 
         }
 
@@ -44,10 +51,13 @@ module.exports = function(app, passport, io) {
 
         } if (req.body.action === "addText") {
 
-        } if (req.body.action === "addVideo") {
+        } if (req.body.action === "deleteVideo") {
+
+        } if (req.body.action === "deleteImage") {
+
+        } if (req.body.action === "deleteText") {
 
         }
-        console.log(req.body);
     });
 
     app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email'}));

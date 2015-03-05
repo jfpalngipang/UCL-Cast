@@ -4,10 +4,7 @@
 var mongoose = require('mongoose')
 
 var videoSchema = new mongoose.Schema({
-    url         :       String,
-    priority    :       Number,
-    timein      :       Date,
-    timeout     :       Date,
+    id          :       String
 })
 
 module.exports = Video = mongoose.model('Video', videoSchema);
