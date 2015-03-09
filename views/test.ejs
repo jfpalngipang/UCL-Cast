@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gridster test</title>
+    <link rel="stylesheet" type="text/css" href="/css/gridster.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom_grid.css">
+</head>
+<body>
+<section class="demo">
+    <div class="gridster">
+        <ul>
+            <li data-row="1" data-col="1" data-sizex="3" data-sizey="4" class="widget"><h1>HELLO</h1></li>
+            <li data-row="2" data-col="1" data-sizex="3" data-sizey="3" class="widget"><h1>WORLD</h1></li>
+            <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="widget"><h1>OR ELSE<h1></li>
+
+            <li data-row="1" data-col="2" data-sizex="3" data-sizey="3" class="widget"></li>
+            <li data-row="2" data-col="2" data-sizex="5" data-sizey="4" class="widget"></li>
+
+        </ul>
+    </div>
+</section>
+<script type="text/javascript" src="/js/vendor/jquery.js"></script>
+<script type="text/javascript" src="/js/vendor/gridster.js" charster="utf-8"></script>
+<script type="text/javascript">
+    var gridster;
+
+    $(function() {
+        gridtster = $(".gridster ul").gridster({
+            widget_margins: [10, 10],
+            widget_base_dimensions: [140, 140],
+            min_cols: 6
+        }).data('gridster');
+    });
+</script>
+</body>
+</html>

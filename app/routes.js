@@ -6,7 +6,7 @@ module.exports = function(app, passport, io, mongoose) {
 
 
     app.get('/', function (req, res) {
-        res.render('index.ejs');
+        res.render('test.ejs');
 
        if(req.query.action === "getVideoQueue") {
             Video.find({}, function(err, videos){
@@ -50,6 +50,8 @@ module.exports = function(app, passport, io, mongoose) {
         } if (req.body.action === "addImage") {
 
         } if (req.body.action === "addText") {
+
+        } if (req.body.action === "addVideo"){
 
         } if (req.body.action === "deleteVideo") {
 

@@ -18,11 +18,20 @@
     <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
     <link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
+    <script type="text/javascript" src="/js/vendor/jquery.gridster.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.gridster.min.css"/>
 
 
 
 </head>
 <body>
+    <div class="gridster">
+        <ul>
+            <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"></li>
+            <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
+        </ul>
+
+    </div>
     <div class="row">
         <div class="large-6 columns" style="background-color:#d8d8d8; height:400px;">
             <div id="player"></div>
@@ -152,10 +161,19 @@
 
     //socket.emit('test1', {'message':'hi!'});
 </script>
-<script>
-    //window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
-    //window.castReceiverManager.start();
-</script>
+    <script type="text/javascript">
+    var gridster;
+
+    $(function() {
+        gridster = $(".gridster > ul").gridster({
+            widget_margins: [10, 10],
+            widget_base_dimensions: [140, 140],
+            min_cols: 6
+        }).data('gridster');
+    });
+
+
+    </script>
     <script type="text/javascript" src="/js/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){

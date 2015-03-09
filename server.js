@@ -21,7 +21,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-
+var prio = require('./priorityEncoder');
+console.log(prio.getLifeTime());
 //passport configuration
 app.use(session({ secret: 'BBCastUCLfranzPalngipang'}));
 app.use(passport.initialize());
