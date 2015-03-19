@@ -5,10 +5,9 @@ var mongoose = require('mongoose')
 
 var textSchema = new mongoose.Schema({
     text        :       String,
-    priority    :       Number,
-    timein      :       Date,
-    timeout     :       Date,
+    timeIn      :       Date,
+    timeOut     :       Date
 })
 
-module.exports = Text = mongoose.model('Text', textSchema);
+module.exports = Text = mongoose.model('UText', textSchema);
 

@@ -4,13 +4,12 @@
 var mongoose = require('mongoose')
 
 var imageSchema = new mongoose.Schema({
-    url         :       String,
-    priority    :       Number,
-    timein      :       Date,
-    timeout     :       Date,
+    ImageUrl         :       String,
+    timeIn      :       Date,
+    timeOut     :       Date
 })
 
-module.exports = Image = mongoose.model('Image', imageSchema);
+module.exports = Image = mongoose.model('UImage', imageSchema);
 
 
 

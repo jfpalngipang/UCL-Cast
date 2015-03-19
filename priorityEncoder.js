@@ -3,6 +3,7 @@
  * This module encodes the priority for each
  * media entry before enqueueing them
  */
+    /*
 var exports = module.exports = {};
 
 //console.log(dateIn);
@@ -13,4 +14,4 @@ exports.getLifeTime = function() {
     lifeTime = Math.abs(dateOut-dateIn);
 }
 
-
+*/
