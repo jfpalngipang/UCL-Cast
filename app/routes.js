@@ -53,11 +53,11 @@ module.exports = function(app, passport, io, mongoose) {
 
         if(req.body.action === "castImage") {
             io.sockets.emit('castImage', {'imageURL':req.body.imageURL});
-        } if (req.body.action === "castText") {
+        } else if (req.body.action === "castText") {
             io.sockets.emit('castText', {'customText': req.body.customText});
-        } if (req.body.action === "castVideo") {
+        } else if (req.body.action === "castVideo") {
             io.sockets.emit('castVideo', {'videoID': req.body.videoID});
-        } if (req.body.action === "addVideo") {
+        } else if (req.body.action === "addVideo") {
             //priorityEncoder
             var timein = new Date();
             var timeout = new Date(req.body.deadline);
@@ -79,7 +79,7 @@ module.exports = function(app, passport, io, mongoose) {
 
 
 
-        } if (req.body.action === "addImage") {
+        } else if (req.body.action === "addImage") {
             //priorityEncoder
             var timein = new Date();
             var timeout = new Date(req.body.deadline);
@@ -97,7 +97,7 @@ module.exports = function(app, passport, io, mongoose) {
             console.log(newImage);
             });
 
-        } if (req.body.action === "addText"){
+        } else if (req.body.action === "addText"){
             var timein = new Date();
             var timeout = new Date(req.body.deadline);
             var mediattl = timeout - timein;
@@ -115,21 +115,23 @@ module.exports = function(app, passport, io, mongoose) {
             });
 
 
-        } if (req.body.action === "deleteVideo") {
-            Video.findByIdAndRemove(req.body.videoId, function(err){
+        } else if (req.body.action === "deleteVideo") {
+            Video.findByIdAndRemove(req.body.videoID, function(err){
                 if(err) throw err;
             });
 
-        } if (req.body.action === "deleteImage") {
+        } else if (req.body.action === "deleteImage") {
             UImage.findByIdAndRemove(req.body.videoId, function(err){
                 if(err) throw err;
             });
 
-        } if (req.body.action === "deleteText") {
+        } else if (req.body.action === "deleteText") {
             UText.findByIdAndRemove(req.body.videoId, function(err){
                 if(err) throw err;
             });
 
+        } else {
+            res.send('API call not supported');
         }
     });
 

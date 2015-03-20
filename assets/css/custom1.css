@@ -1,0 +1,96 @@
+.w1 {
+    background: #fb9800;
+    width: 69%;
+    position:relative;
+    margin: 0 auto;
+    
+}
+.w2 {
+    background: #2db0c8;
+    width: 30%;
+    position:absolute;
+    text-align: center;
+    
+    
+}
+.w3 {
+    background: #e86830;
+    width: 69%;
+    text-align: center;
+    
+   
+}
+.h1 {
+    height: 500px;
+}
+.h2 {
+    height: 270px;
+    line-height: 270px;
+}
+.h3 {
+    height:440px;
+    line-height: 440px;
+}
+.w4 {
+    width: 30%;
+    background: #994277;
+    text-align: center;
+    
+}
+.h4 {
+    height: 330px;
+    
+}
+#receiver-display {
+    background: #323440;
+}
+
+.vid {
+    position: absolute;
+    overflow: auto;
+    display: block;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.custom_text {
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    vertical-align: middle;
+    font-family: 'Muli', sans-serif;
+}
+h1 {
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    vertical-align: middle;
+}
+.imageDiv .image {
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
+}
+ .tweet2{
+    max-width:95%; 
+    max-height:100%;
+    margin:auto;
+    
+}
+.socialDiv {
+    line-height: 330px;
+}
+
+.tweet2 {
+    vertical-align: middle;
+    border: solid #000;
+    
+}
+
+.tweet2Div {
+    vertical-align: middle;
+    
+    width: 350px;
+    
+}
+
+
