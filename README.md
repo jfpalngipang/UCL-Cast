@@ -1,5 +1,8 @@
 # UCL-Cast
-Web App and RESTful API for casting on multimedia bulletin boards using Chromecast
+RESTful API for casting on multimedia bulletin boards using Chromecast
+
+This project is under CoE 198 course of Electrical and Electronics Engineering Institute in the
+University of the Philippines, Diliman
 
 Retrieving Queues
 
